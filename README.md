@@ -67,7 +67,7 @@ This project was completed by following these tasks:
     ```
 
 4.  **Access the application:**
-    * Open a web browser and navigate to `http://localhost:5000`.
+    * Open a web browser and navigate to `http://localhost:5002`.
 
 ## Usage
 
