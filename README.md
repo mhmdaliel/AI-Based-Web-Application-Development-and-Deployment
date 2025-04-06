@@ -63,7 +63,7 @@ This project was completed by following these tasks:
 
 3.  **Run the application:**
     ```bash
-    python server.py
+    python3.11 server.py
     ```
 
 4.  **Access the application:**
