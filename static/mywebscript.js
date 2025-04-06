@@ -1,4 +1,4 @@
-let RunSentimentAnalysis = ()=>{
+let RunSentimentAnalysis = () => {
     textToAnalyze = document.getElementById("textToAnalyze").value;
 
     let xhttp = new XMLHttpRequest();
@@ -7,6 +7,8 @@ let RunSentimentAnalysis = ()=>{
             document.getElementById("system_response").innerHTML = xhttp.responseText;
         }
     };
-    xhttp.open("GET", "emotionDetector?textToAnalyze"+"="+textToAnalyze, true);
-    xhttp.send();
-}
+    xhttp.open("POST", "/emotionDetector", true); 
+    xhttp.setRequestHeader("Content-Type", "application/json"); 
+
+    xhttp.send(JSON.stringify({ text: textToAnalyze })); 
+};
